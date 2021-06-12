@@ -28,7 +28,7 @@ class _InputPageState extends State<InputPage> {
                 Expanded(
                   child: GestureDetector(
                     child: ReusableCard(
-                      color: activeCardColor,
+                      color: inactiveCardColor,
                       cardChild: IconContent(
                         icon: FontAwesomeIcons.mars,
                         label: 'MALE',
