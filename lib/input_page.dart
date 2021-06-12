@@ -4,6 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 const bottomContainerHeight = 80.0;
 const activeCardColor = Color(0xFF1D1E33);
 const bottomContainerColor = Color(0xFFEB1555);
+const textColor = Color(0xFF8D8E98);
 
 class InputPage extends StatefulWidget {
   @override
@@ -29,7 +30,16 @@ class _InputPageState extends State<InputPage> {
                       children: <Widget>[
                         Icon(
                           FontAwesomeIcons.mars,
+                          size: 80.0,
                         ),
+                        SizedBox(
+                          height: 15.0,
+                        ),
+                        Text('MALE',
+                            style: TextStyle(
+                              fontSize: 18.0,
+                              color: textColor,
+                            ))
                       ],
                     ),
                   ),
@@ -76,6 +86,7 @@ class ReusableCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      child: cardChild,
       margin: EdgeInsets.all(15.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10.0),
