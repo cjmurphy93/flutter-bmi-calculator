@@ -24,6 +24,7 @@ class _InputPageState extends State<InputPage> {
         title: Text('BMI CALCULATOR'),
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Expanded(
             child: Row(
@@ -73,6 +74,16 @@ class _InputPageState extends State<InputPage> {
                   Text(
                     'HEIGHT',
                     style: kLabelTextStyle,
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Text(
+                        'h',
+                      ),
+                      Text(
+                        'cm',
+                      ),
+                    ],
                   ),
                 ],
               ),
