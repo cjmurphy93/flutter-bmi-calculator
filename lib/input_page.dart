@@ -70,19 +70,23 @@ class _InputPageState extends State<InputPage> {
             child: ReusableCard(
               color: kActiveCardColor,
               cardChild: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text(
                     'HEIGHT',
                     style: kLabelTextStyle,
                   ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.baseline,
+                    textBaseline: TextBaseline.alphabetic,
                     children: <Widget>[
                       Text(
                         '180',
-                        style: kBoldLabelTextStyle,
+                        style: kNumberTextStyle,
                       ),
                       Text(
-                        'cm',
+                        'in.',
                       ),
                     ],
                   ),
