@@ -70,7 +70,10 @@ class _InputPageState extends State<InputPage> {
               color: kActiveCardColor,
               cardChild: Column(
                 children: <Widget>[
-                  Text('HEIGHT'),
+                  Text(
+                    'HEIGHT',
+                    style: kLabelTextStyle,
+                  ),
                 ],
               ),
             ),
