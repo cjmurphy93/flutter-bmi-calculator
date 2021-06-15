@@ -57,22 +57,27 @@ class _InputPageState extends State<InputPage> {
                         selectedGender = Gender.female;
                       });
                     },
-
-                      color: selectedGender == Gender.female
-                          ? activeCardColor
-                          : inactiveCardColor,
-                      cardChild: IconContent(
-                        icon: FontAwesomeIcons.venus,
-                        label: 'FEMALE',
-                      ),
+                    color: selectedGender == Gender.female
+                        ? activeCardColor
+                        : inactiveCardColor,
+                    cardChild: IconContent(
+                      icon: FontAwesomeIcons.venus,
+                      label: 'FEMALE',
                     ),
                   ),
-
+                ),
               ],
             ),
           ),
           Expanded(
-            child: ReusableCard(color: activeCardColor),
+            child: ReusableCard(
+              color: activeCardColor,
+              cardChild: Column(
+                children: <Widget>[
+                  Text('HEIGHT'),
+                ],
+              ),
+            ),
           ),
           Expanded(
             child: Row(
