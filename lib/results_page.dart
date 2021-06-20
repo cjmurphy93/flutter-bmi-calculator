@@ -9,6 +9,9 @@ class ResultsPage extends StatelessWidget {
           'BMI CALCULATOR',
         ),
       ),
+      body: Text(
+        'Hello',
+      ),
     );
   }
 }
