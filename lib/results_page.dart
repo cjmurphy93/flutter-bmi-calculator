@@ -13,6 +13,7 @@ class ResultsPage extends StatelessWidget {
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Expanded(
             child: Container(
@@ -37,7 +38,7 @@ class ResultsPage extends StatelessWidget {
                   Text(
                     '18.3',
                     style: kBMITextStyle,
-                  )
+                  ),
                 ],
               ),
             ),
