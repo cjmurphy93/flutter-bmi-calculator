@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../constants.dart';
 import '../components/reusable_card.dart';
+import '../components/bottom_button.dart';
 
 class ResultsPage extends StatelessWidget {
   @override
@@ -48,6 +49,12 @@ class ResultsPage extends StatelessWidget {
               ),
             ),
           ),
+          BottomButton(
+            onTap: () {
+              Navigator.pop(context);
+            },
+            buttonTitle: 'RE_CALCULATE',
+          )
         ],
       ),
     );
